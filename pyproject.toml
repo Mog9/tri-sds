@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tri-sds"
+version = "0.1.0"
+description = "Triton-based Speculative Decoding System as an SGLang plugin"
+requires-python = ">=3.10"
+dependencies = [
+    "sglang",
+    "torch",
+    "triton",
+]
+
+[project.entry-points."sglang.srt.plugins"]
+tri_sds = "tri_sds:create_plugin"
+
+[tool.setuptools.packages.find]
+include = ["tri_sds*"]

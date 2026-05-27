@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg-info
+dist/
+build/
+*.egg
+*.whl
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# PyTorch
+*.pt
+*.pth
+*.ckpt
+
+# Triton
+triton_cache/
+*.ttcir
+*.ttgir
+*.llir
+
+# HuggingFace / models
+.cache/
+~/.cache/huggingface/
+models/
+
+# Benchmarks
+*.benchmark
+*.perf
+*.nsys-rep
+*.prof
+*.sqlite
+
+# Nsight / profiling
+*.nsys-rep
+*.nvprof
+*.ncu-rep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+__pycache__/
+.pytest_cache/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# SGLang
+sglang_cache/
+
+# pip temp
+pip-*/
+tmp/
+
+# Git
+*.orig
+
+benchmarks/
+amd/
+results/
